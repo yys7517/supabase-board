@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getPost, getPosts } from "../api/posts";
+import { getPosts } from "../api/posts";
 import { Link } from "react-router-dom";
 
 export default function PostListPage() {
