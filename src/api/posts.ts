@@ -28,6 +28,7 @@ export const createPost = async (
     .insert([newPost])
     .select()
     .single();
+  if (error) throw error;
 
   return data || [];
 };
@@ -39,6 +40,8 @@ export const getPost = async (id: number): Promise<Post> => {
     .select("*")
     .eq("id", id)
     .single();
+
+  if (error) throw error;
 
   return data || [];
 };
