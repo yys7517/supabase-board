@@ -17,7 +17,7 @@ export default function PostListPage() {
 
   return (
     <div>
-      <h1>수퍼베이스 게시판</h1>
+      <h1>수퍼베이스 기초로 만든 게시판</h1>
       <ul>
         {posts?.map((p) => (
           <li key={p.id}>
